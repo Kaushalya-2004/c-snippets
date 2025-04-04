@@ -1,3 +1,5 @@
+#include <stdio.h>
+
 int main() {
     char choice;
     
@@ -10,12 +12,12 @@ int main() {
     choice = getchar();
     
     // Conditional statements to determine the suggestion
-    if (choice == 'H' && choice == 'h') {
+    if (choice == 'H' || choice == 'h') {
         printf("You should have a proper meal! Maybe some rice and curry?\n");
-    } else if (choice == 'N' && choice == 'n') {
+    } else if (choice == 'N' || choice == 'n') {
         printf("Maybe just have a light snack or a drink.\n");
     } else {
-        printf("Invalid choice! Please enter H or N.\n")
+        printf("Invalid choice! Please enter H or N.\n");
     }
     
     // Goodbye message
